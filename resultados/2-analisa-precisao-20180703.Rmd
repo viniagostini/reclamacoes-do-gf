@@ -46,7 +46,7 @@ inverter <- function(x) {
 }
 
 normalizar <- function(x) {
-    return(5 * ((x-min(x)) / (max(x) - min(x))))
+    return(ceiling(4 * ((x-min(x)) / (max(x) - min(x))))+1)
 }
 
 reclamacoes_l = reclamacoes_l %>% 
